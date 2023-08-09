@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Configuration;
 using System.Data;
+using Modelos;
 
 namespace Controladores
 {
@@ -19,6 +20,88 @@ namespace Controladores
         }
 
         #region Sebas
+        public List<Modelos.Estudiante> TraerEstudiantessingrupo(int idGrupo)
+        {
+            List<Modelos.Estudiante> estudiantes=new List<Modelos.Estudiante>();
+
+            try
+            {
+                sqlConn.Open();
+                SqlCommand command = new SqlCommand("spVerEstudiantes", sqlConn);
+                command.CommandType = CommandType.StoredProcedure;
+                command.Parameters.AddWithValue("@idGrupo", idGrupo);
+                using (SqlDataReader reader = command.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        Modelos.Estudiante estudiante = new Modelos.Estudiante();  
+                        estudiante.IdUsuario = Convert.ToInt32(reader["idUsuario"].ToString());
+                        estudiante.Nombre = reader["Nombre"].ToString();
+                        estudiante.CorreoE = reader["CorreoE"].ToString();
+                        estudiantes.Add(estudiante);
+                    }
+                }
+                sqlConn.Close();
+
+            }
+            catch (Exception e)
+            {
+
+            }
+
+
+            return estudiantes;
+        }
+        public List<Modelos.Estudiante> TraerEstudiantesdelgrupo(int idGrupo)
+        {
+            List<Modelos.Estudiante> estudiantes = new List<Modelos.Estudiante>();
+
+            try
+            {
+                sqlConn.Open();
+                SqlCommand command = new SqlCommand("spVerEstudiantesGrupo", sqlConn);
+                command.CommandType = CommandType.StoredProcedure;
+                command.Parameters.AddWithValue("@idGrupo", idGrupo);
+                using (SqlDataReader reader = command.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        Modelos.Estudiante estudiante = new Modelos.Estudiante();
+                        estudiante.IdUsuario = Convert.ToInt32(reader["idEstudianteGrupo"].ToString());
+                        estudiante.Nombre = reader["Nombre"].ToString();
+                        estudiantes.Add(estudiante);
+                    }
+                }
+                sqlConn.Close();
+
+            }
+            catch (Exception e)
+            {
+
+            }
+
+
+            return estudiantes;
+        }
+        public void InsertarEstudianteGrupo(int idGrupo, int idestudiante) {
+            try
+            {
+                sqlConn.Open();
+                SqlCommand command = new SqlCommand("spInsertarEstudiantesGrupo", sqlConn);
+                command.CommandType = CommandType.StoredProcedure;
+                command.Parameters.AddWithValue("@idGrupo", idGrupo);
+                command.Parameters.AddWithValue("@idUsuario", idestudiante);
+                command.ExecuteNonQuery();
+                sqlConn.Close();
+
+            }
+            catch (Exception e)
+            {
+
+            }
+        }
+
+
         public List<Modelos.Cursos> TraerCursos()
         {
             List<Modelos.Cursos> lstcursos = new List<Modelos.Cursos>();
@@ -159,7 +242,7 @@ namespace Controladores
 
             #endregion
 
-            }
+        }
         public List<Modelos.Nota1> VerDetalleNotas(int estudiante)
         {
             List<Modelos.Nota1> lstDetalleNotas = new List<Modelos.Nota1>();
@@ -260,4 +343,5 @@ namespace Controladores
             }
         }
     }
+}
 

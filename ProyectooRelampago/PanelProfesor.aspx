@@ -13,8 +13,7 @@
 <body>
     <nav class="navbar" style="background-color: #0E034F">
         <a href=" 1.aspx" class="btn" style="width: 90%; color: white;background-color:#2906FC;width:30%">Asignacion de rubricas </a>
-        <a href=" 2.aspx" class="btn" style="width: 90%; color: white;background-color:#2906FC;width:30%">Asignacion de estudiantes para un curso </a>
-        <a href=" 3.aspx" class="btn" style="width: 90%; color: white;background-color:#2906FC;width:30%;">Asignar notas a los estudiantes</a>
+        <a href=" RegistrodeNotas.aspx" class="btn" style="width: 90%; color: white;background-color:#2906FC;width:30%;">Asignar notas a los estudiantes</a>
         <a runat="server" class="btn BotonCerrarSesion" href="CerrarSesion.aspx" style="margin-left: revert; color: white">Cerrar Sesión</a>
     </nav>
     <form id="form1" runat="server">

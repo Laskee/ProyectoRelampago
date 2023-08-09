@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AsignarEstudiante.aspx" />
     <Content Include="CerrarSesion.aspx" />
     <Content Include="ConsultarNota.aspx" />
     <Content Include="CSS\Estilo.css" />
@@ -80,6 +81,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AsignarEstudiante.aspx.cs">
+      <DependentUpon>AsignarEstudiante.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AsignarEstudiante.aspx.designer.cs">
+      <DependentUpon>AsignarEstudiante.aspx</DependentUpon>
+    </Compile>
     <Compile Include="CerrarSesion.aspx.cs">
       <DependentUpon>CerrarSesion.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
