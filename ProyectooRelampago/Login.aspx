@@ -30,7 +30,7 @@
                     </div>
                     <div class="form-group row" style="margin-left: 20%;">
                         <asp:Button ID="Conectar" runat="server" class="btn Boton1" Text="Ingresar" OnClick="Conectar_Click" />
-                        <asp:Button ID="btnRegistrar" runat="server" class="btn Boton1" style="margin-left:3%" Text="Registrarse" OnClick="Conectar_Click" />
+                        <a runat="server" class="btn Boton1" href="Registro.aspx" style="margin-left:3%" >Registrarse</a>
                     </div>
                 </form>
             </div>
