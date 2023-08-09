@@ -49,6 +49,36 @@ namespace Controladores
             return lstcursos;
         }
 
+        public List<Modelos.Grupos> TraerGrupos(int idCurso)
+        {
+            List<Modelos.Grupos> lstgrupos = new List<Modelos.Grupos>();
+            Modelos.Grupos grupo = new Modelos.Grupos();
+            try
+            {
+                sqlConn.Open();
+                SqlCommand command = new SqlCommand("spVerGrupos", sqlConn);
+                command.CommandType = CommandType.StoredProcedure;
+                command.Parameters.AddWithValue("@idCurso", idCurso);
+                using (SqlDataReader reader = command.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        grupo.idGrup = Convert.ToInt32(reader["idGrupo"].ToString());
+                        grupo.nombre = reader["Nombre"].ToString();
+                        lstgrupos.Add(grupo);
+                    }
+                }
+                sqlConn.Close();
+
+            }
+            catch (Exception e)
+            {
+
+            }
+
+            return lstgrupos;
+        }
+
         public string ValidarUsuario(string correo, string contrasenia)
         {
             string respuesta = "";
@@ -123,13 +153,8 @@ namespace Controladores
             return Usuario;
         }
 
-
-
         #endregion
 
-
-
-
-
+        
     }
 }

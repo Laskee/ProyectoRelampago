@@ -10,3 +10,9 @@ C:\Users\Sebas\Desktop\MasterRelampago\ProyectoRelampago\Modelos\obj\Debug\Model
 C:\Users\Sebas\Desktop\MasterRelampago\ProyectoRelampago\Modelos\obj\Debug\Modelos.csproj.CoreCompileInputs.cache
 C:\Users\Sebas\Desktop\MasterRelampago\ProyectoRelampago\Modelos\obj\Debug\Modelos.dll
 C:\Users\Sebas\Desktop\MasterRelampago\ProyectoRelampago\Modelos\obj\Debug\Modelos.pdb
+C:\Users\Kendall\Documents\Relampago\Modelos\bin\Debug\Modelos.dll
+C:\Users\Kendall\Documents\Relampago\Modelos\bin\Debug\Modelos.pdb
+C:\Users\Kendall\Documents\Relampago\Modelos\obj\Debug\Modelos.csproj.AssemblyReference.cache
+C:\Users\Kendall\Documents\Relampago\Modelos\obj\Debug\Modelos.csproj.CoreCompileInputs.cache
+C:\Users\Kendall\Documents\Relampago\Modelos\obj\Debug\Modelos.dll
+C:\Users\Kendall\Documents\Relampago\Modelos\obj\Debug\Modelos.pdb

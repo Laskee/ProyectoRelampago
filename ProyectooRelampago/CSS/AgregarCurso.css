@@ -1,0 +1,64 @@
+﻿body {
+}
+
+.container {
+    border: 2px solid #808080;
+    box-shadow: unset;
+    width: 40%;
+}
+
+h1 {
+    background-color: #2100c9;
+    text-align: center;
+    color: white;
+    width: 90%;
+    margin-left: 5%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.seleccionar-curso{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 5%;
+}
+
+#Label1 {
+    position: absolute;
+    top: -20%;
+    left: 5%;
+}
+
+#Label2 {
+    position: absolute;
+    top: -20%;
+    left: 55%;
+}
+
+.dd1 {
+    margin-top: 2%;
+    margin-left: 5%;
+    width: 40%;
+}
+
+.dd2 {
+    margin-top: 2%;
+    margin-left: 9%;
+    width: 40%;
+}
+
+#Button1 {
+    background-color: #ff0000;
+    border-radius: 15px;
+    border: none;
+    color: white;
+    margin-top: 2%;
+    margin-left: 5%;
+    padding: 1%;
+    cursor:pointer;
+}
+
+.rubrica{
+
+}

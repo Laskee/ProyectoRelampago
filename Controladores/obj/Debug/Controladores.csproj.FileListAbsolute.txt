@@ -25,3 +25,12 @@ C:\Users\Sebas\Desktop\MasterRelampago\ProyectoRelampago\Controladores\obj\Debug
 C:\Users\Sebas\Desktop\MasterRelampago\ProyectoRelampago\Controladores\obj\Debug\Controladores.csproj.CopyComplete
 C:\Users\Sebas\Desktop\MasterRelampago\ProyectoRelampago\Controladores\obj\Debug\Controladores.dll
 C:\Users\Sebas\Desktop\MasterRelampago\ProyectoRelampago\Controladores\obj\Debug\Controladores.pdb
+C:\Users\Kendall\Documents\Relampago\Controladores\bin\Debug\Controladores.dll
+C:\Users\Kendall\Documents\Relampago\Controladores\bin\Debug\Controladores.pdb
+C:\Users\Kendall\Documents\Relampago\Controladores\bin\Debug\Modelos.dll
+C:\Users\Kendall\Documents\Relampago\Controladores\bin\Debug\Modelos.pdb
+C:\Users\Kendall\Documents\Relampago\Controladores\obj\Debug\Controladores.csproj.AssemblyReference.cache
+C:\Users\Kendall\Documents\Relampago\Controladores\obj\Debug\Controladores.csproj.CoreCompileInputs.cache
+C:\Users\Kendall\Documents\Relampago\Controladores\obj\Debug\Controladores.csproj.CopyComplete
+C:\Users\Kendall\Documents\Relampago\Controladores\obj\Debug\Controladores.dll
+C:\Users\Kendall\Documents\Relampago\Controladores\obj\Debug\Controladores.pdb

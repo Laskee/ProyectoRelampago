@@ -67,7 +67,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AgregarCurso.aspx" />
     <Content Include="CerrarSesion.aspx" />
+    <Content Include="CSS\AgregarCurso.css" />
     <Content Include="CSS\Estilo.css" />
     <Content Include="CSS\Registro.css" />
     <Content Include="Imagen\Logo.jpg" />
@@ -78,6 +80,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AgregarCurso.aspx.cs">
+      <DependentUpon>AgregarCurso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgregarCurso.aspx.designer.cs">
+      <DependentUpon>AgregarCurso.aspx</DependentUpon>
+    </Compile>
     <Compile Include="CerrarSesion.aspx.cs">
       <DependentUpon>CerrarSesion.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
