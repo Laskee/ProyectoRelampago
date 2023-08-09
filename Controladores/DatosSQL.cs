@@ -120,7 +120,14 @@ namespace Controladores
 
             }
 
+
+
+
             return Usuario;
+
+
+
+
         }
 
 
@@ -152,9 +159,105 @@ namespace Controladores
 
             #endregion
 
+            }
+        public List<Modelos.Nota1> VerDetalleNotas(int estudiante)
+        {
+            List<Modelos.Nota1> lstDetalleNotas = new List<Modelos.Nota1>();
+
+            try
+            {
+                using (SqlConnection sqlConn2 = new SqlConnection(sqlConn.ConnectionString))
+                {
+                    sqlConn2.Open();
+                    SqlCommand command = new SqlCommand("spVerDetalleNotas", sqlConn2);
+                    command.CommandType = CommandType.StoredProcedure;
+
+                    command.Parameters.AddWithValue("@idEstudianteGrupo", estudiante);
+
+                    using (SqlDataReader reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            Modelos.Nota1 detalleNota = new Modelos.Nota1();
+                            detalleNota.Nombre = (string)reader["Nombre"];
+                            detalleNota.Porcentaje = (int)reader["Porcentaje"];
+                            detalleNota.Nota = (int)reader["Nota"];
+                            // Agrega más campos si es necesario
+
+                            lstDetalleNotas.Add(detalleNota);
+                        }
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                // Manejar el error si es necesario
+            }
+
+            return lstDetalleNotas;
+        }
 
 
 
+
+        public List<Modelos.Nota2> VerDetalleNotas2(int estudiante)
+        {
+            List<Modelos.Nota2> lstDetalleNotas = new List<Modelos.Nota2>();
+
+            try
+            {
+                using (SqlConnection sqlConn2 = new SqlConnection(sqlConn.ConnectionString))
+                {
+                    sqlConn2.Open();
+                    SqlCommand command = new SqlCommand("spVerNotaFinal", sqlConn2);
+                    command.CommandType = CommandType.StoredProcedure;
+
+                    command.Parameters.AddWithValue("@idUsuario", estudiante);
+
+                    using (SqlDataReader reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            Modelos.Nota2 detalleNota = new Modelos.Nota2();
+                            detalleNota.Nombre = (string)reader["Nombre"];
+                            detalleNota.NombreCurso = (string)reader["NombreCurso"];
+                            detalleNota.NotaFinal = ((int)reader["NotaFinal"]);
+                            // Agrega más campos si es necesario
+
+                            lstDetalleNotas.Add(detalleNota);
+                        }
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                // Manejar el error si es necesario
+            }
+
+            return lstDetalleNotas;
+        }
+
+        public void InsertarNota(string idEst, string Rubrica, int Nota)
+        {
+            try
+            {
+                using (SqlConnection sqlConn2 = new SqlConnection(sqlConn.ConnectionString))
+                {
+                    sqlConn2.Open();
+                    SqlCommand command = new SqlCommand("spInsertarUsuario", sqlConn2);
+                    command.CommandType = CommandType.StoredProcedure;
+
+                    command.Parameters.AddWithValue("@idEstudianteGrupo", idEst);
+                    command.Parameters.AddWithValue("@idRubrica", Rubrica);
+                    command.Parameters.AddWithValue("@Nota", Nota);
+
+                    command.ExecuteNonQuery();
+                }
+            }
+            catch (Exception e)
+            {
+                // Manejar el error si es necesario
+            }
         }
     }
-}
+

@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="CerrarSesion.aspx" />
+    <Content Include="ConsultarNota.aspx" />
     <Content Include="CSS\Estilo.css" />
     <Content Include="CSS\Registro.css" />
     <Content Include="Imagen\Logo.jpg" />
@@ -75,6 +76,7 @@
     <Content Include="NotasEstudiante.aspx" />
     <Content Include="PanelProfesor.aspx" />
     <Content Include="Registro.aspx" />
+    <Content Include="RegistrodeNotas.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -84,6 +86,13 @@
     </Compile>
     <Compile Include="CerrarSesion.aspx.designer.cs">
       <DependentUpon>CerrarSesion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultarNota.aspx.cs">
+      <DependentUpon>ConsultarNota.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsultarNota.aspx.designer.cs">
+      <DependentUpon>ConsultarNota.aspx</DependentUpon>
     </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
@@ -113,6 +122,13 @@
     </Compile>
     <Compile Include="Registro.aspx.designer.cs">
       <DependentUpon>Registro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrodeNotas.aspx.cs">
+      <DependentUpon>RegistrodeNotas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegistrodeNotas.aspx.designer.cs">
+      <DependentUpon>RegistrodeNotas.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
