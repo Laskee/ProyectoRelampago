@@ -17,6 +17,9 @@ namespace ProyectooRelampago
         protected void Conectar_Click(object sender, EventArgs e)
         {
             //Validaciones del inicio de sesion
+            Controladores.DatosSQL sql = new Controladores.DatosSQL();
+
+
 
         }
     }
