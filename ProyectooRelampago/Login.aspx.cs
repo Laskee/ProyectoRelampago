@@ -36,7 +36,7 @@ namespace ProyectooRelampago
                     }
                     else
                     {
-                        Response.Redirect("NotasEstudiante.aspx");
+                        Response.Redirect("ConsultarNota.aspx");
                     }
 
                 }

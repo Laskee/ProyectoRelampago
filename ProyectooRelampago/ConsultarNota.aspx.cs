@@ -14,8 +14,14 @@ namespace ProyectooRelampago
         Controladores.DatosSQL con = new Controladores.DatosSQL();
 
         protected void Page_Load(object sender, EventArgs e)
+
         {
             var detalleNotas = con.VerDetalleNotas2(4);
+            if (Session["Usuairo"] != null) {
+                Modelos.Usuario user = (Modelos.Usuario)Session["Usuario"];
+                detalleNotas = con.VerDetalleNotas2(user.IdUsuario);
+            }
+            
 
 
             StringBuilder cardsHtml = new StringBuilder();
@@ -51,6 +57,11 @@ namespace ProyectooRelampago
         protected void btnAction_Click(object sender, EventArgs e)
         {
             var detalleNotas = con.VerDetalleNotas(1);
+            if (Session["Usuairo"] != null)
+            {
+                Modelos.Usuario user = (Modelos.Usuario)Session["Usuario"];
+                detalleNotas = con.VerDetalleNotas(user.IdUsuario);
+            }
 
 
             StringBuilder modelsHtml = new StringBuilder();
