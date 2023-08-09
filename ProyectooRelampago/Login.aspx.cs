@@ -16,9 +16,32 @@ namespace ProyectooRelampago
 
         protected void Conectar_Click(object sender, EventArgs e)
         {
+
+            
+            // capturar informacion
+            string correo = txtCorreo.Text;
+            string contrasenia = txtContrasenia.Text;
             //Validaciones del inicio de sesion
             Controladores.DatosSQL sql = new Controladores.DatosSQL();
+            if (sql.ValidarUsuario(correo, contrasenia).Equals("Existe"))
+            {
+                //traer al usuario para guardarlo en memoria
+                Modelos.Usuario user = sql.TraerUsuario(correo);
+                if (user != null)
+                {
+                    Session["Usuario"] = user;
+                    if (user.BitProfesor == 1)
+                    {
+                        Response.Redirect("PanelProfesor.aspx");
+                    }
+                    else
+                    {
+                        Response.Redirect("NotasEstudiante.aspx");
+                    }
 
+                }
+
+            }
 
 
         }

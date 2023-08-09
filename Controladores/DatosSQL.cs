@@ -49,6 +49,80 @@ namespace Controladores
             return lstcursos;
         }
 
+        public string ValidarUsuario(string correo, string contrasenia)
+        {
+            string respuesta = "";
+
+            try
+            {
+                sqlConn.Open();
+                SqlCommand command = new SqlCommand("ValidarUsuario", sqlConn);
+                command.CommandType = CommandType.StoredProcedure;
+                command.Parameters.AddWithValue("@Correo", correo);
+                command.Parameters.AddWithValue("@Contrasenia", contrasenia);
+                using (SqlDataReader reader = command.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+
+                        respuesta = reader["respuesta"].ToString();
+
+                    }
+                }
+                sqlConn.Close();
+
+            }
+            catch (Exception e)
+            {
+
+            }
+
+
+            return respuesta;
+        }
+
+        public Modelos.Usuario TraerUsuario(string correo)
+        {
+            Modelos.Usuario Usuario = null;
+
+            try
+            {
+                sqlConn.Open();
+                SqlCommand command = new SqlCommand("TraerUsuario", sqlConn);
+                command.CommandType = CommandType.StoredProcedure;
+                command.Parameters.AddWithValue("@correo", correo);
+                using (SqlDataReader reader = command.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        Usuario = new Modelos.Usuario();
+                        string nose = reader["Profesor"].ToString();
+                        if (nose.Equals("False"))
+                        {
+                            Usuario.BitProfesor = 0;
+                        }
+                        else
+                        {
+                            Usuario.BitProfesor = 1;
+                        }
+                        Usuario.IdUsuario = Convert.ToInt32(reader["idUsuario"].ToString());
+                        Usuario.CorreoE = reader["CorreoE"].ToString();
+                        Usuario.Contrasenia1 = reader["Contrasenia"].ToString();
+                        Usuario.Nombre = reader["Nombre"].ToString();
+
+                    }
+                }
+                sqlConn.Close();
+
+            }
+            catch (Exception e)
+            {
+
+            }
+
+            return Usuario;
+        }
+
 
 
         #endregion
