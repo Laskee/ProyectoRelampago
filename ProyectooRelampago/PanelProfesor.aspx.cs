@@ -11,6 +11,8 @@ namespace ProyectooRelampago
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            Modelos.Usuario usuario = (Modelos.Usuario)Session["Usuario"];
+            lblNombreUsuario.Text= $"Bienvenido al sistema {usuario.Nombre}.";
 
         }
     }

@@ -18,7 +18,7 @@
     </nav>
     <form id="form1" runat="server">
         <div>
-            <h1>Panel de control del profesor</h1>
+            <asp:Label ID="lblNombreUsuario" runat="server" Text="" style="font-size:40px"></asp:Label>
         </div>
     </form>
 </body>

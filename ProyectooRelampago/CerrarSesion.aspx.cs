@@ -12,6 +12,7 @@ namespace ProyectooRelampago
         protected void Page_Load(object sender, EventArgs e)
         {
             Session["Usuario"] = null;
+            Session["idGrupo"] = null;
             Response.Redirect("Login.aspx");
         }
     }
