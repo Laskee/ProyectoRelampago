@@ -61,3 +61,7 @@ C:\Users\Sebas\source\repos\ProyectooRelampago\ProyectooRelampago\obj\Debug\Proy
 C:\Users\Sebas\source\repos\ProyectooRelampago\ProyectooRelampago\obj\Debug\ProyectooRelampago.csproj.CopyComplete
 C:\Users\Sebas\source\repos\ProyectooRelampago\ProyectooRelampago\obj\Debug\ProyectooRelampago.dll
 C:\Users\Sebas\source\repos\ProyectooRelampago\ProyectooRelampago\obj\Debug\ProyectooRelampago.pdb
+C:\Users\ETC\source\repos\ProyectoRelampago\ProyectooRelampago\obj\Debug\ProyectooRelampago.csproj.AssemblyReference.cache
+C:\Users\ETC\source\repos\ProyectoRelampago\ProyectooRelampago\obj\Debug\ProyectooRelampago.csproj.CoreCompileInputs.cache
+C:\Users\ETC\source\repos\ProyectoRelampago\ProyectooRelampago\obj\Debug\ProyectooRelampago.dll
+C:\Users\ETC\source\repos\ProyectoRelampago\ProyectooRelampago\obj\Debug\ProyectooRelampago.pdb

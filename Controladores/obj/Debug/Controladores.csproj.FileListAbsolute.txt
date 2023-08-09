@@ -7,3 +7,12 @@ C:\Users\Sebas\source\repos\ProyectooRelampago\Controladores\obj\Debug\Controlad
 C:\Users\Sebas\source\repos\ProyectooRelampago\Controladores\obj\Debug\Controladores.csproj.CopyComplete
 C:\Users\Sebas\source\repos\ProyectooRelampago\Controladores\obj\Debug\Controladores.dll
 C:\Users\Sebas\source\repos\ProyectooRelampago\Controladores\obj\Debug\Controladores.pdb
+C:\Users\ETC\source\repos\ProyectoRelampago\Controladores\bin\Debug\Controladores.dll
+C:\Users\ETC\source\repos\ProyectoRelampago\Controladores\bin\Debug\Controladores.pdb
+C:\Users\ETC\source\repos\ProyectoRelampago\Controladores\bin\Debug\Modelos.dll
+C:\Users\ETC\source\repos\ProyectoRelampago\Controladores\bin\Debug\Modelos.pdb
+C:\Users\ETC\source\repos\ProyectoRelampago\Controladores\obj\Debug\Controladores.csproj.AssemblyReference.cache
+C:\Users\ETC\source\repos\ProyectoRelampago\Controladores\obj\Debug\Controladores.csproj.CoreCompileInputs.cache
+C:\Users\ETC\source\repos\ProyectoRelampago\Controladores\obj\Debug\Controladores.csproj.CopyComplete
+C:\Users\ETC\source\repos\ProyectoRelampago\Controladores\obj\Debug\Controladores.dll
+C:\Users\ETC\source\repos\ProyectoRelampago\Controladores\obj\Debug\Controladores.pdb
