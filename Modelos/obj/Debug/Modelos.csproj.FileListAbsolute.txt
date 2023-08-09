@@ -1,0 +1,6 @@
+C:\Users\Sebas\source\repos\ProyectooRelampago\Modelos\bin\Debug\Modelos.dll
+C:\Users\Sebas\source\repos\ProyectooRelampago\Modelos\bin\Debug\Modelos.pdb
+C:\Users\Sebas\source\repos\ProyectooRelampago\Modelos\obj\Debug\Modelos.csproj.AssemblyReference.cache
+C:\Users\Sebas\source\repos\ProyectooRelampago\Modelos\obj\Debug\Modelos.csproj.CoreCompileInputs.cache
+C:\Users\Sebas\source\repos\ProyectooRelampago\Modelos\obj\Debug\Modelos.dll
+C:\Users\Sebas\source\repos\ProyectooRelampago\Modelos\obj\Debug\Modelos.pdb
