@@ -15,31 +15,31 @@ namespace ProyectooRelampago
     {
 
         /// <summary>
-        /// Control correo.
+        /// Control idestudiante.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl correo;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText idestudiante;
 
         /// <summary>
-        /// Control contrasena.
+        /// Control idrubrica.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputPassword contrasena;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText idrubrica;
 
         /// <summary>
-        /// Control nombre.
+        /// Control nota.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText nombre;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText nota;
 
         /// <summary>
         /// Control Button1.

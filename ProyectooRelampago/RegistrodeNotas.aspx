@@ -20,19 +20,19 @@
     <div id="registro-box">
 
         <h2>Registro de notas</h2>
-        <form method="post" runat="server">
+        <form runat="server">
 
-            <label for="correo">Estudiante:</label>
-            <input runat="server" type="email" id="correo" name="correo" required>
+            <label >Estudiante:</label>
+            <input runat="server" type="text" id="idestudiante" name="idestudiante" required>
 
-            <label for="contrasena">Rubrica:</label>
-            <input runat="server" type="password" id="contrasena" name="contrasena" required>
+            <label >Rubrica:</label>
+            <input runat="server" type="text" id="idrubrica" name="idrubrica" required>
 
-            <label for="nombre">Nota:</label>
-            <input runat="server" type="text" id="nombre" name="nombre" required>
+            <label >Nota:</label>
+            <input runat="server" type="text" id="nota" name="nota" required>
 
 
-            <asp:Button ID="Button1" runat="server" Text="Registrar Nota" />
+            <asp:Button ID="Button1" runat="server" Text="Registrar Nota" OnClick="Button1_Click" />
         </form>
     </div>
 

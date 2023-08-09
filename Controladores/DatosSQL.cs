@@ -320,14 +320,14 @@ namespace Controladores
             return lstDetalleNotas;
         }
 
-        public void InsertarNota(string idEst, string Rubrica, int Nota)
+        public void InsertarNota(int idEst, int Rubrica, int Nota)
         {
             try
             {
                 using (SqlConnection sqlConn2 = new SqlConnection(sqlConn.ConnectionString))
                 {
                     sqlConn2.Open();
-                    SqlCommand command = new SqlCommand("spInsertarUsuario", sqlConn2);
+                    SqlCommand command = new SqlCommand("spInsertarNotas", sqlConn2);
                     command.CommandType = CommandType.StoredProcedure;
 
                     command.Parameters.AddWithValue("@idEstudianteGrupo", idEst);
@@ -342,6 +342,17 @@ namespace Controladores
                 // Manejar el error si es necesario
             }
         }
+
+
+
+
+
+
+
+
+
+
+
     }
 }
 
