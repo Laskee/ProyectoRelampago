@@ -126,10 +126,35 @@ namespace Controladores
 
 
         #endregion
+        #region Registrar
+        public void InsertarUsuarioEnBD(string correo, string contrasena, string nombre, bool esProfesor)
+        {
+            try
+            {
+                using (SqlConnection sqlConn2 = new SqlConnection(sqlConn.ConnectionString))
+                {
+                    sqlConn2.Open();
+                    SqlCommand command = new SqlCommand("spInsertarUsuario", sqlConn2);
+                    command.CommandType = CommandType.StoredProcedure;
+
+                    command.Parameters.AddWithValue("@CorreoE", correo);
+                    command.Parameters.AddWithValue("@Contrasenia", contrasena);
+                    command.Parameters.AddWithValue("@Nombre", nombre);
+                    command.Parameters.AddWithValue("@Profesor", esProfesor);
+
+                    command.ExecuteNonQuery();
+                }
+            }
+            catch (Exception e)
+            {
+                // Manejar el error si es necesario
+            }
+
+            #endregion
 
 
 
 
-
+        }
     }
 }

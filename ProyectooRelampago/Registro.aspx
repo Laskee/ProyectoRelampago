@@ -10,23 +10,22 @@
 
 <div id="registro-box">
     <h2>Registro</h2>
-    <form action="/ruta/para/registro" method="post">
+    <form  method="post" runat="server">
 
         <label for="correo">Correo:</label>
-        <input type="email" id="correo" name="correo" required>
+        <input runat="server" type="email" id="correo" name="correo" required>
 
         <label for="contrasena">Contraseña:</label>
-        <input type="password" id="contrasena" name="contrasena" required>
+        <input runat="server" type="password" id="contrasena" name="contrasena" required>
 
         <label for="nombre">Nombre Completo:</label>
-        <input type="text" id="nombre" name="nombre" required>
+        <input runat="server" type="text" id="nombre" name="nombre" required>
 
         <label>
-            <input type="checkbox" id="es_profesor" name="es_profesor">
+            <input runat="server" type="checkbox" id="es_profesor" name="es_profesor">
             ¿Es Profesor?
         </label>
-
-        <button type="submit">Registrar</button>
+        <asp:Button ID="Button1" runat="server" Text="Registrar" OnClick="Button1_Click" />
         <button type="button" onclick="window.history.back();">Atrás</button>
     </form>
 </div>
